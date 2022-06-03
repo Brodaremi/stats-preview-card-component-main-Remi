@@ -1,0 +1,239 @@
+body{
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  }
+#background{
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20% 0;
+}
+.main{
+  background-color: hsl(244, 38%, 16%);
+
+}
+.background-image{
+  background-image: url("images/image-header-mobile.jpg");
+  background-color: hsl(277, 64%, 61%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+article{
+  justify-content: center;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+
+}
+span{
+  color: hsl(277, 64%, 61%);
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 10% 10% 0 10%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: center;
+  padding: 20px 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+h3{
+  color:hsl(0, 0%, 100%);
+  text-align: center;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.stats{
+  margin: 0 0 20px 0;
+}
+.stats p{
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  padding: 0;
+  padding-bottom: 15px;
+}
+.stats p :last-child{
+  padding-bottom: 0;
+}
+
+.attribution {
+  font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/*RESPONSIVENESS*/
+/*DESKTOP*/
+@media screen and (min-width: 800px) {
+  #background{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10%;
+  }
+  article{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+  }
+  .background-image{
+    padding:0;
+    background-image: url("images/image-header-desktop.jpg");
+    background-color: hsl(277, 64%, 61%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    width: 50%;
+    height: 350px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .text{
+    width: 50%;
+    font-size: 15px;
+  }
+  h1{
+      color: hsl(0, 0%, 100%);
+      text-align: left;
+      padding: 10px 10% 0 50px;
+      margin: 0;
+      font-size: 2em;
+      line-height: 1;
+  }
+  .text p{
+
+  }
+  p{
+    text-align: left;
+    padding: 5% 10% 5% 50px;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: left;
+  }
+  h3{
+    font-size: 1.2em;
+    text-align: left;
+    padding-top: 20px;
+  }
+  .stats{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+  }
+  .stats p{
+    position: relative;
+    top: 40px;
+    font-size: 1em;
+  }
+  .stats p:nth-of-type(1n) {
+    right: 5px;
+
+  }
+  .stats p:nth-of-type(2n) {
+    right: 40px;
+
+  }
+  .stats p:last-child{
+    right: 90px;
+  }
+  .stats h3{
+  position: relative;
+  left: 60px;
+  }
+  .stats h3:nth-of-type(2n){
+  position: relative;
+  left: 15px;
+  }
+  .stats h3:nth-of-type(3n){
+  position: relative;
+  left: -20px;
+  }
+
+}
+
+@media screen and (max-width: 1360px) and (min-width:1264px){
+  .background-image{
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+  }
+  .stats p:nth-of-type(1n) {
+    right: -10px;
+
+  }
+  .stats p:nth-of-type(2n) {
+    right: 10px;
+
+  }
+  .stats p:last-child{
+    right: 40px;
+  }
+  .stats h3{
+  position: relative;
+  left: 60px;
+  }
+  .stats h3:nth-of-type(2n){
+  position: relative;
+  left: 30px;
+  }
+  .stats h3:nth-of-type(3n){
+  position: relative;
+  left: 20px;
+  }
+}
+@media screen and (max-width: 1264px) and (min-width:800px){
+  .background-image{
+    width: 50%;
+    background-size: cover;
+  }
+  .stats p:nth-of-type(1n) {
+    right: -15px;
+
+  }
+  .stats p:nth-of-type(2n) {
+    right: 10px;
+
+  }
+  .stats p:last-child{
+    right: 45px;
+  }
+  .stats h3{
+  position: relative;
+  left: 60px;
+  }
+  .stats h3:nth-of-type(2n){
+  position: relative;
+  left: 30px;
+  }
+  .stats h3:nth-of-type(3n){
+  position: relative;
+  left: 3px;
+  }
+  .stats p{
+    font-size: 0.8em;
+  }
+  h3{
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
+  }
+}
